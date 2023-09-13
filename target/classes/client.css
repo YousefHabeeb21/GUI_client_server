@@ -1,0 +1,11 @@
+.root {
+    -fx-background-color: lightblue;
+}
+
+.label {
+    -fx-font-size: 14px;
+}
+
+.list-view {
+    -fx-background-color: white;
+}
