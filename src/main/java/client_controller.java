@@ -27,7 +27,8 @@ public class client_controller {
         String all = message +  ":" + recipient;
 
         // messages will only be sent if the recipients are typed properly
-        if (recipient.equalsIgnoreCase("All") || recipient.equalsIgnoreCase("ALL") || recipient.equalsIgnoreCase("all") || recipient.matches("^[0-9]+(,[0-9]+)*$")) {
+        if (recipient.equalsIgnoreCase("All") || recipient.equalsIgnoreCase("ALL") || 
+            recipient.equalsIgnoreCase("all") || recipient.matches("^[0-9]+(,[0-9]+)*$")) {
             if (recipient.length() != 0) {
                 clientConnection.send(all);
                 c1.clear();
